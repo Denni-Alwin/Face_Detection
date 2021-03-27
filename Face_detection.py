@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 vid= cv2.VideoCapture(0)#Captures the webcam (0) represents your inbuild webcam for external camera (1) 
-faceCascade = cv2.CascadeClassifier('C:\\Users\\Denni\\Desktop\\haarcascade_frontalface_default.xml')#location of xml file
+faceCascade = cv2.CascadeClassifier('C:\\Users\\Denni\\Desktop\\haarcascade_frontalface_default.xml')#location of xml file initialize with \\
 
 while True:
     ret,video = vid.read()
