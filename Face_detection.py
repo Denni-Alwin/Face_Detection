@@ -12,7 +12,7 @@ while True:
         cv2.rectangle(video, (x, y), (x+w, y+h), (0,0,255), 2)#Draw's a rectangle around the detection area
     img2 = np.array(video)
     cv2.imshow("video", img2)#Shows the output as window
-    if cv2.waitKey(1) & 0xFF == ord('q'):#Make (Q) as quit option
+    if cv2.waitKey(1) & 0xFF == ord('q'):#Making (Q) as quit option
         break
 
     
