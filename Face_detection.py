@@ -6,7 +6,7 @@ faceCascade = cv2.CascadeClassifier('C:\\Users\\Denni\\Desktop\\haarcascade_fron
 
 while True:
     ret,video = vid.read()
-    gray = cv2.cvtColor(video,cv2.COLOR_BGR2GRAY)#Makes RGB to GRAY for making the classifier to find the face easier 
+    gray = cv2.cvtColor(video,cv2.COLOR_BGR2GRAY)#Makes RGB to GRAY for making the classifier to find the face easier
     faces = faceCascade.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
         cv2.rectangle(video, (x, y), (x+w, y+h), (0,0,255), 2)#Draw's a rectangle around the detection area
